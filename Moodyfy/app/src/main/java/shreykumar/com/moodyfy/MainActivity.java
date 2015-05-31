@@ -103,6 +103,11 @@ public class MainActivity extends Activity implements
 
     @Override
     protected void onDestroy() {
+        Spotify.destroyPlayer(this);
         super.onDestroy();
+    }
+
+    public void callback() {
+        System.out.println("It works");
     }
 }

@@ -108,6 +108,8 @@ public class MainActivity extends Activity implements
     }
 
     public void callback() {
-        System.out.println("It works");
+        //System.out.println("It works");
+        Intent intent = new Intent(this, Select.class);
+        startActivity(intent);
     }
 }

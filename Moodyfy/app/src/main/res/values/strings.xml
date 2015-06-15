@@ -3,5 +3,8 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_select">Select</string>
+    <string name="welcome">Welcome to Moodyfy</string>
+    <string name="start">Click here to begin</string>
+    <string name="title_activity_auth">Auth</string>
+    <string name="connect">Please wait while we connect to Spotify</string>
 </resources>

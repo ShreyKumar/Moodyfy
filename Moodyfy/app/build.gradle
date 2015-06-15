@@ -1,14 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2" // Note: this version should match the latest build-tools version
-    // that you installed in the SDK manager
+    compileSdkVersion 22
+    buildToolsVersion "23.0.0 rc2"
 
     defaultConfig {
-        applicationId "shreykumar.com.moodyfy"
+        applicationId "com.shreykumar.moodyfy"
         minSdkVersion 14
-        targetSdkVersion 21
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
     }
@@ -20,19 +19,6 @@ android {
     }
 }
 
-repositories {
-    mavenCentral()
-    flatDir {
-        dirs 'libs'
-    }
-}
-
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    // This library handles authentication and authorization
-    compile 'com.spotify.sdk:spotify-auth:1.0.0-beta10@aar'
-    // This library handles music playback
-    compile 'com.spotify.sdk:spotify-player:1.0.0-beta10@aar'
-    // All other dependencies for your app should also be here:
-    compile 'com.android.support:appcompat-v7:22.1.1'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
 }
